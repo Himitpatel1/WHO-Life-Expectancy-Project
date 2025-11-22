@@ -1,93 +1,74 @@
-# WHO Life Expectancy Project  
-**Predictive Analytics in Global Health (CIND820 Project)**  
+# WHO Life Expectancy – CIND820 Final Project
+
+This repository contains all code, documentation, and files used for my CIND820 Capstone Project at Toronto Metropolitan University.  
+The goal of the project is to analyze global WHO indicators and build machine learning models to predict life expectancy across countries.
+---
+
+## 🔍 Project Overview
+
+This project explores the key factors that influence life expectancy and evaluates different machine learning models for prediction, including:
+
+- Linear Regression  
+- Decision Tree Regressor  
+- Random Forest Regressor  
+
+The Random Forest model achieved the best performance with a test R² of **0.958** and strong stability across cross-validation folds.
 
 ---
 
-## 🧠 Overview  
-This project was completed for the **CIND820 – Capstone Project** course at **Toronto Metropolitan University**, under the supervision of **Dr. Ceni Babaoglu**.  
+## 🧠 Key Objectives
 
-The goal of the project is to study global health and socioeconomic factors that influence **life expectancy** across countries.  
-The dataset comes from the **World Health Organization (WHO)** and covers the years **2000–2015**.  
-
-It includes variables such as GDP, Schooling, BMI, Alcohol consumption, Adult Mortality, and other health indicators.  
-Each record represents one **country–year** observation, and the target variable is **Life expectancy (years)**.
+- Identify the most important predictors of life expectancy  
+- Compare multiple machine learning models  
+- Evaluate models based on effectiveness, efficiency, and stability  
+- Provide reproducible analysis with clear documentation  
 
 ---
 
-## 🎯 Objectives  
-- Explore global patterns and trends in life expectancy.  
-- Handle missing values and prepare the dataset for analysis.  
-- Build a **Linear Regression** model to predict life expectancy.  
-- Evaluate model performance using metrics such as MAE and R².
+## 🔁 Reproducibility Instructions
+
+To reproduce the results:
+
+1. Open the notebook file below in Google Colab:  
+   `notebook/Patel_Himit_InitialResults.ipynb`
+
+2. Upload the dataset when prompted (if not included).
+
+3. Run all cells from top to bottom.
+
+4. The notebook will automatically:
+   - Clean and preprocess the data  
+   - Generate all visualizations (correlation heatmap, feature importance, etc.)  
+   - Train and evaluate all models  
+   - Produce the comparison table and final analysis  
+
+All results (accuracy metrics, cross-validation scores, and plots) will be generated automatically.
 
 ---
 
-## 🧰 Methods and Tools  
-- **Language:** Python  
-- **Libraries:** pandas, scikit-learn, seaborn, matplotlib  
-- **Techniques:** Data cleaning, Exploratory Data Analysis (EDA), and Regression Modeling  
+## 📊 Final Results Summary
+
+- **Best Model:** Random Forest  
+- **Test R²:** 0.958  
+- **MAE:** ~1.22 years  
+- **RMSE:** ~1.90 years  
+- **Most Important Features:** Adult Mortality, Schooling  
 
 ---
 
-## 📂 Files in this Repository  
+## 📚 Data Source
 
- File Name and Description 
-Patel_Himit_InitialResults.ipynb Google Colab notebook with all code and results 
-Patel_Himit_InitialResults.pdf  Exported PDF report used for submission
-Life_Expectancy_Data.csv  Dataset used for analysis 
-README.md  Project overview and instructions
+World Health Organization (WHO).  
+Global Health Observatory (GHO) data.  
+https://www.who.int/data/gho
 
 ---
 
-## 🔄 Workflow  
-1. Data Collection (WHO dataset)  
-2. Data Cleaning and Preparation  
-3. Exploratory Data Analysis (EDA)  
-4. Model Building (Linear Regression)  
-5. Model Evaluation and Results Visualization  
+## 👤 Student Information
 
----
-
-## 🧩 How to Reproduce  
-
-1. Open the notebook (`.ipynb`) in **Google Colab**.  
-2. Upload the `Life_Expectancy_Data.csv` file when prompted.  
-3. Run all cells from top to bottom.  
-4. Review the summary statistics, charts, and model outputs.  
-
----
-
-## 📊 Model Summary  
-
-A **Linear Regression model** was trained using six predictors:  
-`GDP`, `Schooling`, `BMI`, `Alcohol`, `Adult Mortality`, and `Infant deaths`.  
-
-**Performance Results:**  
-- Mean Absolute Error ≈ 5 years  
-- R² Score ≈ 0.75  
-
-These results show that education, economic factors, and mortality rates have a strong relationship with life expectancy.
-
----
-
-## 🔗 Project Link  
-➡️ [Open Project on GitHub](https://github.com/himitpatel1/WHO-Life-Expectancy-Project)
-
----
-
-## 📚 Dataset Source  
-[WHO Life Expectancy Dataset on Kaggle](https://www.kaggle.com/datasets/kumarajarshi/life-expectancy-who)
-
----
-
-## 📖 References  
-1. World Health Organization. (2023). *Life Expectancy Data.* https://www.who.int  
-2. Kumar, A. (2019). *Life Expectancy (WHO) Dataset.* Kaggle. https://www.kaggle.com/datasets/kumarajarshi/life-expectancy-who
-3. Pedregosa, F. et al. (2011). *Scikit-learn: Machine Learning in Python.  
-4. McKinney, W. (2017). *Python for Data Analysis.* O’Reilly Media.  
-
----
-
-## Himit Patel  
-## Toronto Metropolitan University, Fall 2025
-
+- **Name:** Himit Patel  
+- **Course:** CIND820 – Capstone Project  
+- **Program:** Big Data & Analytics  
+- **Supervisor:** Dr. Ceni Babaoglu  
+- **University:** Toronto Metropolitan University  
+- **Year:** 2025  
